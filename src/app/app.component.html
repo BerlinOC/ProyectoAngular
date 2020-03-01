@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+      <div class="col">
+          GAAAAAAAAAAA
+          {{nombre}}
+          {{get()}}
+          <button type="button" class="btn btn-primary" [disabled]="accion" >Primary</button>
+      </div>
+      <input type="text" class="form-control" (input)="mensaje($event)">
+          {{titulo}}
+  </div>
+</div>
+<app-formulario (variable)="mandar($event)">
+
+</app-formulario>  
+<div>
+  <app-personas *ngFor="let a of personas; let i = index"
+      [dato1]="a"
+      [dato2]="i"
+  ></app-personas>
+  
+</div> 
